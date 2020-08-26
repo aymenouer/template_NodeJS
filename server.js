@@ -5,8 +5,7 @@ const path = require('path');
 const config = require('./config');
 const cors = require('cors');
 const helmet = require('helmet');
-
-// import authRouter from './ressources/auth/auth.router'
+const categorie = require('./routes/Categorie.router');
 
 const morgan = require('morgan')
 
@@ -33,7 +32,7 @@ app.use(morgan('dev'))
 
 // Define Routes
 
-//app.use('/api/user', userRouter)
+app.use('/api/Categorie', categorie)
 
 
 
