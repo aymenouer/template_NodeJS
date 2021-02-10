@@ -10,6 +10,8 @@ router.route('/add').post((req, res) => {
     const email = req.body.email;
   
 
+
+
   
     const categorie = new Categorie({
         name,
